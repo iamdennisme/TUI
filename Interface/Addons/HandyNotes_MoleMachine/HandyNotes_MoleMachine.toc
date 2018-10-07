@@ -1,0 +1,13 @@
+## Interface: 80000
+## Title: HandyNotes: Mole Machine
+## Notes: Display locations of Dark Iron Dwarf mole machines.
+## Version: 1.1.2
+## Author: AcidWeb
+## RequiredDeps: HandyNotes
+## SavedVariables: HNMoleMachineConfig
+## X-Website: https://www.curseforge.com/wow/addons/handynotes-mole-machine
+## X-Curse-Project-ID: 300570
+## X-WoWI-ID: 24766
+
+Locale\Locale.xml
+HandyNotes_MoleMachine.lua

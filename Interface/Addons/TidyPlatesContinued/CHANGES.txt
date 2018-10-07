@@ -1,0 +1,12 @@
+lightweight tag 285d26c0187ce2b1eda5bba9629c24926391fb26 6.20.1
+Author:	Luxocracy <luxor355@gmail.com>
+Date:	Tue Aug 14 19:30:23 2018 +0200
+
+commit 285d26c0187ce2b1eda5bba9629c24926391fb26
+Author: Luxocracy <luxor355@gmail.com>
+Date:   Tue Aug 14 19:30:23 2018 +0200
+
+    Fixed an error
+    
+    - Fixed a reported error where if the GetChildren function returns no children would cause the Hide function to create an error.
+

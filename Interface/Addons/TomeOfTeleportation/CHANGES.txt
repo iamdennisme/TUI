@@ -1,0 +1,16 @@
+lightweight tag 05da65bdc3ba71315fd895feef84de829c851616 3.2
+Author:	Remeen <dmeen@hotmail.com>
+Date:	Sun Sep 9 20:38:11 2018 +0100
+
+commit 05da65bdc3ba71315fd895feef84de829c851616
+Author: Remeen <dmeen@hotmail.com>
+Date:   Sun Sep 9 20:38:11 2018 +0100
+
+    Allow FLight Master's Whistle in Alterac Warfront
+
+commit 52641b449b61dee14835c51406efc731d96d9eda
+Author: Remeen <dmeen@hotmail.com>
+Date:   Thu Aug 23 22:06:42 2018 +0100
+
+    Localised place names
+

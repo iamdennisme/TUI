@@ -1,0 +1,14 @@
+## Interface: 80000
+## Title: Meeting Stone
+## Notes-zhCN: 帮助您更好的组建队伍
+## Version: 80000.06
+## SavedVariables: MEETINGSTONE_UI_DB
+## SavedVariablesPerCharacter: MEETINGSTONE_CHARACTER_DB
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## X-WoWBox-Ver: 1
+
+Load.xml
+
+## X-Vendor: AbyUI
+## X-163UI-Version: 20180305005715

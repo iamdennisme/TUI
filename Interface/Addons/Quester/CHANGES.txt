@@ -1,0 +1,81 @@
+tag 01d7beb6d5c04404b8e043e4a62b970b6592025f 8.0.1.1
+Author:	Hendrik Leppkes <h.leppkes@gmail.com>
+Date:	Thu Aug 9 09:44:14 2018 +0200
+
+Tag as 8.0.1.1
+
+commit 2ece308c7483d657aa8c19d452b67b55d39c13a5
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Jun 23 12:49:27 2018 +0200
+
+    Update the QuestLogQuests_Update hook to show quest tags in the map quest log
+
+commit 4d4c229e43f6438c3321d0bb2588e5e93b70d805
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Jun 23 12:29:53 2018 +0200
+
+    Update TOC for 8.0
+
+commit 40be19e65e9d6dd00c50a0fe95fc51126f965648
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Jun 23 12:29:30 2018 +0200
+
+    Cleanup
+
+commit e8292c9d387f0076dfc995573a8af5ef2562e655
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Thu Jun 21 10:49:48 2018 +0200
+
+    Remove Quest Tracker taint check
+
+commit 1e860b37e3737389f038816347b1f3b13387dfa3
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Fri Jun 8 01:50:22 2018 +0200
+
+    Add the faction icon for campaign quests, like the default objective tracker
+
+commit 83d213794cb2130343fc8e97621369259fdb7d29
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Fri Jun 8 01:50:06 2018 +0200
+
+    Support matching for optional quest objectives
+
+commit b41c7b3947314bf36c338dd12aa9cdbb2c7a6817
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Apr 21 01:23:45 2018 +0200
+
+    Disable quest levels by default on 8.0, basically everything scales
+
+commit 461b787db762bd24cffd577669144873fed0bfde
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Apr 21 01:21:40 2018 +0200
+
+    Consistently color all objective headers
+
+commit 98f7e5c3f8900accfb0596ae6ea8d844061c9135
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Apr 21 01:20:51 2018 +0200
+
+    Don't hook into the QuestMap on 8.0
+    
+    The button list is local to the file, so some new mechanic has to be
+    found - if even required. We don't do much to the quest log there anyway.
+
+commit ee08d642bce5b935ab7893638f82c728c731a47d
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Thu Feb 22 12:58:38 2018 +0100
+
+    Tweak position of the quest tag icon
+
+commit 7ec576bf07d2814c962bf7551f5a3ec336b3fcd3
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Thu Feb 22 10:54:43 2018 +0100
+
+    Add an option to show the quest tag icons in the quest tracker
+
+commit 9873d1785ed9f15115d7e2c395099af0a241716f
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Thu Feb 22 10:35:15 2018 +0100
+
+    Pass "isScaling" to GetQuestDifficultyColor where appropriate
+
