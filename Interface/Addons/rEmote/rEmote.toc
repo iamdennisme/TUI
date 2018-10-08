@@ -1,6 +1,0 @@
-## Interface: 80000
-## Author: zork
-## Title: rEmote
-## Notes: Redirects NPC emotes to blizzards scrolling combattext
-
-core.lua

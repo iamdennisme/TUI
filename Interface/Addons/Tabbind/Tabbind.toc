@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 70100
 ## Title : Tabbind
 ## Notes: Tab bind
 ## Author: kost

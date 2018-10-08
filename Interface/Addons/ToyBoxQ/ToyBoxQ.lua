@@ -213,9 +213,9 @@ function ToyBoxQ:OnInitialize()
 end
 
 function ToyBoxQ:OnEnable()
-	C_ToyBox.SetAllSourceTypeFilters(true);
-	C_ToyBox.SetCollectedShown(true);
-	C_ToyBox.SetUncollectedShown(true);
+	C_ToyBox.ClearAllSourceTypesFiltered();
+	C_ToyBox.SetFilterCollected(true);
+	C_ToyBox.SetFilterUncollected(true);
 	C_ToyBox.SetFilterString("");
 	ToggleCollectionsJournal();
 
@@ -1215,9 +1215,9 @@ function ToyBoxQ:PopulateWindowExpansion(parent, filter_expansion)
 end
 
 function ToyBoxQ:UpdateKnownToys()
-	C_ToyBox.SetAllSourceTypeFilters(true);
-	C_ToyBox.SetCollectedShown(true);
-	C_ToyBox.SetUncollectedShown(true);
+	C_ToyBox.ClearAllSourceTypesFiltered();
+	C_ToyBox.SetFilterCollected(true);
+	C_ToyBox.SetFilterUncollected(true);
 	C_ToyBox.SetFilterString("");
 
 	local NumToys = C_ToyBox.GetNumToys();

@@ -1,0 +1,18 @@
+﻿## Interface: 70000
+## Title: Broker: |cffffffffRaidFinder|r - |cff00ff00Forwarder|r
+## Version: 1.1 r012
+## Author: tritium
+## X-Category: Raid
+## Dependencies: Broker_RaidFinder
+## OptionalDeps: Ace3
+## Notes: 'Broker: Raid Finder' plugin for forwarding of LFG messages to other players using the addon and receiving from them.
+## SavedVariables: BRFForwarder_DB
+
+## X-Embeds: Ace3
+
+Locales\locales.xml
+
+Utilities.lua
+BRF_Forwarder.lua
+Channel.lua
+Communication.lua

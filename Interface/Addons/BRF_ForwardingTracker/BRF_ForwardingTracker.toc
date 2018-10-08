@@ -1,0 +1,16 @@
+﻿## Interface: 70000
+## Title: Broker: |cffffffffRaidFinder|r - |cff00ff00Forwarding Tracker|r
+## Version: 1.1 r011
+## Author: tritium
+## X-Category: Raid
+## Dependencies: Broker_RaidFinder
+## OptionalDeps: Ace3, LFGForwarder, TradeForwarder
+## Notes: 'Broker: Raid Finder' plugin for keeping track of messages provided by 'LFGForwarder' and 'Tradeforwarder' addon.
+## SavedVariables: BRFForwardingTracker_DB
+
+## X-Embeds: Ace3
+
+Locales\locales.xml
+
+Utilities.lua
+BRF_ForwardingTracker.lua
