@@ -1,0 +1,15 @@
+## Interface: 70300
+## Author: Quil
+## Title: ToyBoxQ
+## Notes: ToyBoxQ
+## Version: 1.6
+## SavedVariables: ToyBoxQDB
+## OptionalDeps: Ace3, LibDataBroker-1.1
+## X-Embeds: Ace3
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+ToyBoxQ.lua
+Toy.lua
+Broker.lua

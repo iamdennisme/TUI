@@ -1,0 +1,8 @@
+<Bindings>	
+	<Binding name="CLICK ToyBoxQBtn:LeftButton" header="TOYBOXQ">
+		-- ToyBoxQ:SummonRandomToy()
+	</Binding>
+	<Binding name="CLICK ToyBoxQTrans:LeftButton" header="TOYBOXQ">
+		-- ToyBoxQ:SummonRandomTransform()
+	</Binding>
+</Bindings>
