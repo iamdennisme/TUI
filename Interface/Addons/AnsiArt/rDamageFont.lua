@@ -1,1 +1,0 @@
-DAMAGE_TEXT_FONT = "Fonts\\DAMAGE.ttf"
