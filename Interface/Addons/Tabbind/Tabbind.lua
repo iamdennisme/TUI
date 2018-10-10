@@ -1,1 +1,0 @@
-local f=STab or CreateFrame("Frame","STab")f:RegisterEvent("PLAYER_ENTERING_WORLD")f:SetScript("OnEvent",function()local _,t=IsInInstance()SetBinding("TAB","TARGETNEARESTENEMY"..((t=="arena"or t=="pvp")and"PLAYER"or""))end)
