@@ -1,7 +1,0 @@
-## Interface: 70100
-## Author: EvilChookie
-## Title: rMinimap_Xervish
-## Notes: Xervish's Tweaks for rMinimap (so they aren't lost in updates)
-## RequiredDeps: rLib, rMinimap
-
-rMinimap_Xervish.lua
