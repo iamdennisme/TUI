@@ -1,0 +1,7 @@
+changeset:   138:e6aeada0a228
+tag:         v8.0.1.138
+user:        Tercio
+date:        Fri Sep 28 14:20:43 2018 -0300
+summary:     - Fixed health amount in the personal player bar.
+
+
