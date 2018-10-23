@@ -1,0 +1,8 @@
+## Interface: 800000
+## Title: Tidy Plates: |cffff6060ClassicPlates
+## Notes: Vanilla-Style Plates.
+## Author: delabarra 
+## Dependencies: TidyPlates, TidyPlatesHub
+
+TidyPlates_ClassicPlates.lua
+

@@ -1,0 +1,31 @@
+tag dd5eb90f7661b5d03cf1742ccc35dcb508143797 8.0.0
+Author:	Talryn <git@talryn.sent.com>
+Date:	Tue Jul 17 14:24:36 2018 -0400
+
+Tag as 8.0.0.
+
+commit ce00d96538051010b670c990b1bfc032857eb210
+Author: Talryn <git@talryn.sent.com>
+Date:   Thu Jul 12 16:44:08 2018 -0400
+
+    Update talents for BfA.
+
+commit b72599b7329193ade205e911864e47b4a7e28129
+Author: Talryn <git@talryn.sent.com>
+Date:   Thu Jul 12 11:21:43 2018 -0400
+
+    Remove more conditional code to support pre-BfA.
+
+commit 67695fc89c330f4af1ae9191de259d4f0ce453c5
+Author: Talryn <git@talryn.sent.com>
+Date:   Thu Jul 12 11:00:17 2018 -0400
+
+    More 8.0 changes
+    * Update TOC.
+    * Add Hemostasis spell.
+    * Fix UNIT_SPELLCAST_SENT and SUCCEEDED.
+    * Fix Blood Shield Bar checking for spell known and not the computed variable.
+    * Fix UnitBuff and UnitDebuff to remove rank and just support 8.0.
+    * Fix target swing timer so it correctly reads source and dest.
+    * Update the DS percentages.
+

@@ -1,0 +1,4 @@
+Boshi Lian:
+	- bump ver 7.0
+tgic:
+	- add custom keycode

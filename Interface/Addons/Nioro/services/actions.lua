@@ -1,8 +1,24 @@
-local addon = LibStub('AceAddon-3.0'):GetAddon('Nioro')
-local L = LibStub("AceLocale-3.0"):GetLocale('Nioro', false)
-local Actions = addon:NewModule('Actions')
+local addonName = GetAddOnMetadata(..., 'Title')
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local L = LibStub("AceLocale-3.0"):GetLocale(addonName, false)
+local ActionsModule = addon:NewModule('Actions')
 local Utils = addon:GetModule('Utils')
 local infos = addon:GetModule('Constants'):GetInfos()
+local Actions = {}
+
+setmetatable(ActionsModule, {
+    __index = function (self, key)
+        if Actions[key] then
+            if type(key) == 'string' 
+            and not string.find(key, 'init') 
+            and InCombatLockdown() then
+                Actions:log(ERR_NOT_IN_COMBAT)
+                return function () end
+            end
+            return Actions[key]
+        end
+    end
+})
 
 function Actions:OnInitialize()
     self:initSlash()
@@ -40,17 +56,8 @@ function Actions:initSlash()
     SLASH_NIORO2 = "/NIORO"
     SLASH_NIORO3 = "/nio"
     SlashCmdList['NIORO'] = function(param)
-        param = string.lower(param)
-        if param == 'show' then 
-            local Settings = addon:GetModule('Settings', true)
-            return Settings and Settings:Open()
-        end
-        if param == 'version' then
-            return self:log('v'..infos.VERSION)
-        end
-        self:log("Usage:")
-        self:log('/nio show  '..L.SLASH_TIPS_SHOW)
-        self:log('/nio version  '..L.SLASH_TIPS_VERSION)
+        local Settings = addon:GetModule('Settings', true)
+        return Settings and Settings:Open()
     end
 end
 
@@ -79,6 +86,11 @@ function Actions:updateFramePart(fn)
     end
     NIORO_VARS.COMPACT_FRAME = nextFrames
     nextFrames = nil
+end
+
+function Actions:updateCompactRaidFrameScale()
+    if not NIORO_DB then return end
+    CompactRaidFrameContainer:SetScale(NIORO_DB.SETTINGS.FRAME_SCALE)
 end
 
 function Actions:toggleRoleIcon(toggle)
@@ -138,11 +150,7 @@ end
 
 function Actions:setFrameScale(scale)
     NIORO_DB.SETTINGS.FRAME_SCALE = scale
-    if not self:isEnableFrame() then return end
-
-    for k, frame in pairs(NIORO_VARS.COMPACT_FRAME) do
-        frame:SetScale(NIORO_DB.SETTINGS.FRAME_SCALE)
-    end
+    self:updateCompactRaidFrameScale()
 end
 
 function Actions:setFontStatusScale(scale)

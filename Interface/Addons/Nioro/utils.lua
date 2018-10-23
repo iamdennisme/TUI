@@ -1,4 +1,5 @@
-local addon = LibStub('AceAddon-3.0'):GetAddon('Nioro')
+local addonName = GetAddOnMetadata(..., 'Title')
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local Utils = addon:NewModule('Utils')
 
 function Utils:toboolean(t)
@@ -31,6 +32,8 @@ end
 
 function Utils:isRaidFrame(f)
     if not f then return false end
+    if f.unit and string.find(f.unit, 'nameplate') then return false end
+
     local name = f:GetName()
     if not name then return false end
     local isRaidFrame = string.find(name, 'CompactRaidFrame')
